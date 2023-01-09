@@ -18,37 +18,49 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header-border-bottom">
-      <div class="container header-container align-center">
+    <header class="header--border">
+      <div class="container header__container align-center">
         <div class="flex-box align-center">
-          <a class="logo" href="index.html"
-            ><span class="logo-web">Web</span>Studio</a
+          <a class="logo link__header" href="index.html"
+            ><span class="logo__header">Web</span>Studio</a
           >
           <nav>
-            <ul class="header-navigation">
+            <ul class="header__navigation flex-box">
               <li>
-                <a class="is-active" href="index.html">Agencja</a>
+                <a class="link__header is-active" href="index.html">Agencja</a>
               </li>
               <li>
-                <a href="portfolio.html">Portfolio</a>
+                <a class="link__header" href="portfolio.html">Portfolio</a>
               </li>
               <li>
-                <a href="#">Kontakt</a>
+                <a class="link__header" href="#">Kontakt</a>
               </li>
             </ul>
           </nav>
         </div>
-        <ul class="header-list flex-box align-center">
+        <ul class="header__contact-info flex-box align-center">
           <li>
-            <a href="mailto:info@devstudio.com"
-              ><svg class="icon" width="16" height="12">
+            <a
+              class="link__header link__header--contact-info"
+              href="mailto:info@devstudio.com"
+              ><svg
+                class="icon icon__header--contact-info"
+                width="16"
+                height="12"
+              >
                 <use href="images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:48111111111"
-              ><svg class="icon" width="10" height="16">
+            <a
+              class="link__header link__header--contact-info"
+              href="tel:48111111111"
+              ><svg
+                class="icon icon__header--contact-info"
+                width="10"
+                height="16"
+              >
                 <use href="images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
