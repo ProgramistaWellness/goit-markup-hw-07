@@ -1,5 +1,5 @@
-https://programistawellness.github.io/goit-markup-hw-06/
+https://programistawellness.github.io/goit-markup-hw-07/
 
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-zadanie nr 6
+zadanie nr 7
