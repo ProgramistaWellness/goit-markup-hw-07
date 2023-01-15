@@ -1,0 +1,104 @@
+@import "utils/vars";
+
+%transition {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+%BorderRadius {
+  border-radius: 4px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: getColor("text");
+  letter-spacing: 0.03em;
+  line-height: 1;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul,
+li,
+p,
+h3,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.paragraph {
+  line-height: 1.5;
+  color: getColor("paragraph");
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.extra-padding {
+  padding: 100px 0;
+}
+
+.logo {
+  color: getColor("logo");
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 94px;
+}
+
+.link {
+  @extend %transition;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.button {
+  @extend %BorderRadius;
+  font-weight: 700;
+  background-color: getColor("brand");
+  color: getColor("brandAccent");
+  min-width: 200px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 2;
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+
+.negative-margin {
+  margin-top: -94px;
+}
+
+.section__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.image {
+  display: block;
+}
