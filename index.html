@@ -15,17 +15,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header--border">
-      <div class="container header__container align-center">
-        <div class="flex-box align-center">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__wrapper">
           <a class="logo link__header" href="index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
           <nav>
-            <ul class="header__navigation flex-box">
+            <ul class="header__navigation">
               <li>
                 <a class="link link__header is-active" href="index.html"
                   >Agencja</a
@@ -40,16 +40,12 @@
             </ul>
           </nav>
         </div>
-        <ul class="header__contact-info flex-box align-center">
+        <ul class="header__contact-info">
           <li>
             <a
               class="link link__header link__header--contact-info"
               href="mailto:info@devstudio.com"
-              ><svg
-                class="icon icon__header--contact-info"
-                width="16"
-                height="12"
-              >
+              ><svg class="icon icon__header" width="16" height="12">
                 <use href="images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
@@ -58,11 +54,7 @@
             <a
               class="link link__header link__header--contact-info"
               href="tel:48111111111"
-              ><svg
-                class="icon icon__header--contact-info"
-                width="10"
-                height="16"
-              >
+              ><svg class="icon icon__header" width="10" height="16">
                 <use href="images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
@@ -72,8 +64,8 @@
     </header>
     <main>
       <!--HERO-->
-      <section class="section hero--bg">
-        <div class="container flex-box extra-padding hero--content">
+      <section class="section hero">
+        <div class="container hero__container">
           <h1 class="hero__title">
             EFEKTYWNE ROZWIĄZANIA
             <br />
@@ -86,7 +78,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <ul class="hero-gap flex-box">
+          <ul class="hero__list">
             <li>
               <figure>
                 <div class="hero__tile">
@@ -156,12 +148,12 @@
       </section>
       <!--About Us-->
 
-      <section class="section negative-margin">
+      <section class="section about>
         <div class="container">
           <h2 class="section__heading">Czym się zajmujemy</h2>
         </div>
         <div class="container">
-          <ul class="flex-box hero-gap">
+          <ul class="list__about">
             <li class="about__tile">
               <img
                 src="images/about_us/box1.jpg"
@@ -170,7 +162,7 @@
                 height="294"
               />
               <div class="about__name">
-                <p class="about__heading">aplikacje komputerowe</p>
+                <p class="about__caption">aplikacje komputerowe</p>
               </div>
             </li>
             <li class="about__tile">
@@ -181,7 +173,7 @@
                 height="294"
               />
               <div class="about__name">
-                <p class="about__heading">aplikacje mobilne</p>
+                <p class="about__caption">aplikacje mobilne</p>
               </div>
             </li>
             <li class="about__tile">
@@ -192,18 +184,18 @@
                 height="294"
               />
               <div class="about__name">
-                <p class="about__heading">rozwiązania graficzne</p>
+                <p class="about__caption">rozwiązania graficzne</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section team--bg">
+      <section class="section team">
         <div class="container">
           <h2 class="section__heading">Nasz zespół</h2>
-          <ul class="team__list flex-box">
+          <ul class="team__list">
             <li>
-              <figure class="figure__team">
+              <figure class="team__figure">
                 <img
                   class="image"
                   src="images/team/teamcard_1.jpg"
@@ -211,26 +203,26 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption__team">
+                <figcaption class="team__figcaption">
                   <h3 class="team__heading">Jon Doe</h3>
                   <p class="paragraph paragraph__team">Product Designer</p>
-                  <ul class="flex-box social-list">
-                    <li class="social-list__item">
+                  <ul class="list">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-instagram"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-twitter "></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-facebook"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -240,7 +232,7 @@
               </figure>
             </li>
             <li>
-              <figure class="figure__team">
+              <figure class="team__figure">
                 <img
                   class="image"
                   src="images/team/teamcard_2.jpg"
@@ -248,26 +240,26 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption__team">
+                <figcaption class="team__figcaption">
                   <h3 class="team__heading">Jon Doe</h3>
                   <p class="paragraph paragraph__team">Frontend Developer</p>
-                  <ul class="flex-box social-list">
-                    <li class="social-list__item">
+                  <ul class="list">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-instagram"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-twitter "></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-facebook"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -277,7 +269,7 @@
               </figure>
             </li>
             <li>
-              <figure class="figure__team">
+              <figure class="team__figure">
                 <img
                   class="image"
                   src="images/team/teamcard_3.jpg"
@@ -285,26 +277,26 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption__team">
+                <figcaption class="team__figcaption">
                   <h3 class="team__heading">Jon Doe</h3>
                   <p class="paragraph paragraph__team">Marketing</p>
-                  <ul class="flex-box social-list">
-                    <li class="social-list__item">
+                  <ul class="list">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-instagram"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-twitter "></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-facebook"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -314,7 +306,7 @@
               </figure>
             </li>
             <li>
-              <figure class="figure__team">
+              <figure class="team__figure">
                 <img
                   class="image"
                   src="images/team/teamcard_4.jpg"
@@ -322,26 +314,26 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption__team">
+                <figcaption class="team__figcaption">
                   <h3 class="team__heading">Jon Doe</h3>
                   <p class="paragraph paragraph__team">UI Designer</p>
-                  <ul class="flex-box social-list">
-                    <li class="social-list__item">
+                  <ul class="list">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-instagram"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-twitter "></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-facebook"></use>
                       </svg>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item">
                       <svg class="icon" width="20px" height="20px">
                         <use href="images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -358,44 +350,44 @@
           <h2 class="section__heading">Nasi klienci</h2>
         </div>
         <div class="container">
-          <ul class="flex-box hero-gap">
-            <li class="clients--border flex-box align-center justify-center">
-              <div class="flex-box align-center justify-center">
+          <ul class="list__clients">
+            <li class="list__item-clients list__item-wrapper">
+              <div class="list__item-wrapper">
                 <svg class="icon" width="41" height="46.7">
                   <use href="images/icons.svg#icon-group"></use>
                 </svg>
               </div>
             </li>
-            <li class="clients--border flex-box align-center justify-center">
-              <div class="flex-box align-center justify-center">
+            <li class="list__item-clients list__item-wrapper">
+              <div class="list__item-wrapper">
                 <svg class="icon" width="40" height="52">
                   <use href="images/icons.svg#icon-group-1"></use>
                 </svg>
               </div>
             </li>
-            <li class="clients--border flex-box align-center justify-center">
-              <div class="flex-box align-center justify-center">
+            <li class="list__item-clients list__item-wrapper">
+              <div class="list__item-wrapper">
                 <svg class="icon" width="43.46" height="41.18">
                   <use href="images/icons.svg#icon-group-2"></use>
                 </svg>
               </div>
             </li>
-            <li class="clients--border flex-box align-center justify-center">
-              <div class="flex-box align-center justify-center">
+            <li class="list__item-clients list__item-wrapper">
+              <div class="list__item-wrapper">
                 <svg class="icon" width="84.44" height="40.62">
                   <use href="images/icons.svg#icon-group-3"></use>
                 </svg>
               </div>
             </li>
-            <li class="clients--border flex-box align-center justify-center">
-              <div class="flex-box align-center justify-center">
+            <li class="list__item-clients list__item-wrapper">
+              <div class="list__item-wrapper">
                 <svg class="icon" width="62.54" height="45.43">
                   <use href="images/icons.svg#icon-group-4"></use>
                 </svg>
               </div>
             </li>
-            <li class="clients--border flex-box align-center justify-center">
-              <div class="flex-box align-center justify-center">
+            <li class="list__item-clients list__item-wrapper">
+              <div class="list__item-wrapper">
                 <svg class="icon" width="93.79" height="43.93">
                   <use href="images/icons.svg#icon-group-6"></use>
                 </svg>
@@ -404,13 +396,13 @@
           </ul>
         </div>
       </section>
-      <footer class="footer--bg">
-        <div class="container flex-box">
-          <div class="container__footer">
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__wrapper">
             <a class="logo logo__footer link" href="index.html"
               ><span class="logo--accent">Web</span>Studio</a
             >
-            <ul class="flex-box adress__footer">
+            <ul class="footer__adress">
               <li>
                 <address>m. Warszawa, Aleje Jerozolimskie 21</address>
               </li>
@@ -427,32 +419,32 @@
             </ul>
           </div>
 
-          <div class="social-footer">
-            <p class="paragraph__social-footer">dołącz do nas</p>
-            <ul class="flex-box social-list">
-              <li class="social-list__item social-list__item--reverse">
+          <div class="footer__social">
+            <p class="paragraph__footer">dołącz do nas</p>
+            <ul class="list">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </li>
-              <li class="social-list__item social-list__item--reverse">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-twitter "></use>
                 </svg>
               </li>
-              <li class="social-list__item social-list__item--reverse">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li class="social-list__item social-list__item--reverse">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <div class="wrapper__footer">
+          <div class="footer__form-wrapper">
             <form class="footer__form">
               <div class="footer__input-wrapper">
                 <label class="footer__label"
@@ -477,9 +469,9 @@
         </div>
       </footer>
     </main>
-    <div class="backdrop flex-box is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
-        <form class="flex-box backdrop__form">
+        <form class="backdrop__form">
           <p class="backdrop__title">Zostaw swoje dane w formularzu poniżej</p>
           <div class="backdrop__input-wrapper">
             <label for="name" class="backdrop__label"
