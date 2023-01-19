@@ -15,17 +15,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header--border">
-      <div class="container header__container align-center">
-        <div class="flex-box align-center">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__wrapper">
           <a class="logo link__header" href="index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
           <nav>
-            <ul class="header__navigation flex-box">
+            <ul class="header__navigation">
               <li>
                 <a class="link link__header" href="index.html">Agencja</a>
               </li>
@@ -40,16 +40,12 @@
             </ul>
           </nav>
         </div>
-        <ul class="header__contact-info flex-box align-center">
+        <ul class="header__contact-info">
           <li>
             <a
               class="link link__header link__header--contact-info"
               href="mailto:info@devstudio.com"
-              ><svg
-                class="icon icon__header--contact-info"
-                width="16"
-                height="12"
-              >
+              ><svg class="icon icon__header" width="16" height="12">
                 <use href="images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
@@ -58,11 +54,7 @@
             <a
               class="link link__header link__header--contact-info"
               href="tel:48111111111"
-              ><svg
-                class="icon icon__header--contact-info"
-                width="10"
-                height="16"
-              >
+              ><svg class="icon icon__header" width="10" height="16">
                 <use href="images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
@@ -92,7 +84,7 @@
             </li>
           </ul>
 
-          <ul class="flex-box hero-gap grind">
+          <ul class="grind">
             <li>
               <figure>
                 <div class="overly">
@@ -103,7 +95,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -111,8 +103,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption class="figcaption__grind">
-                  <h3 class="heading_grind">Technocrack</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Technocrack</h3>
                   <p class="paragraph__grind">Strona internetowa</p>
                 </figcaption>
               </figure>
@@ -127,7 +119,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -135,8 +127,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">
                     Grafika New Orlean vs Golden Star
                   </h3>
                   <p class="paragraph__grind">Dizajn</p>
@@ -153,7 +145,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -161,8 +153,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Restauracja Seafood</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Restauracja Seafood</h3>
                   <p class="paragraph__grind">Aplikacja</p>
                 </figcaption>
               </figure>
@@ -177,7 +169,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -185,8 +177,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Projekt Prime</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Projekt Prime</h3>
                   <p class="paragraph__grind">Marketing</p>
                 </figcaption>
               </figure>
@@ -201,7 +193,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -209,8 +201,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Projekt Boxes</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Projekt Boxes</h3>
                   <p class="paragraph__grind">Aplikacja</p>
                 </figcaption>
               </figure>
@@ -225,7 +217,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -233,8 +225,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Inspiration has no Borders</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Inspiration has no Borders</h3>
                   <p class="paragraph__grind">Strona internetowa</p>
                 </figcaption>
               </figure>
@@ -249,7 +241,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -257,8 +249,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Magazyn Limited Edition</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Magazyn Limited Edition</h3>
                   <p class="paragraph__grind">Dizajn</p>
                 </figcaption>
               </figure>
@@ -273,7 +265,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -281,8 +273,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Projekt LAB</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Projekt LAB</h3>
                   <p class="paragraph__grind">Marketing</p>
                 </figcaption>
               </figure>
@@ -297,7 +289,7 @@
                     height="294"
                   />
                   <div class="overly__text">
-                    <p class="overly__paragraph">
+                    <p class="paragraph__overly">
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
                       platformę do celów szpiegowskich i ataków na
@@ -305,8 +297,8 @@
                     </p>
                   </div>
                 </div>
-                <figcaption>
-                  <h3 class="heading_grind">Growing Business</h3>
+                <figcaption class="grind__figcaption">
+                  <h3 class="grind__heading">Growing Business</h3>
                   <p class="paragraph__grind">Aplikacja</p>
                 </figcaption>
               </figure>
@@ -314,13 +306,13 @@
           </ul>
         </div>
       </section>
-      <footer class="footer--bg">
-        <div class="container flex-box">
-          <div class="container__footer">
-            <a class="logo logo__footer link" href="index.html"
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__wrapper">
+            <a class="logo logo__footer" href="index.html"
               ><span class="logo--accent">Web</span>Studio</a
             >
-            <ul class="flex-box adress__footer">
+            <ul class="footer__adress">
               <li>
                 <address>m. Warszawa, Aleje Jerozolimskie 21</address>
               </li>
@@ -337,32 +329,32 @@
             </ul>
           </div>
 
-          <div class="social-footer">
-            <p class="paragraph__social-footer">dołącz do nas</p>
-            <ul class="flex-box social-list">
-              <li class="social-list__item social-list__item--reverse">
+          <div class="footer__social">
+            <p class="paragraph__footer">dołącz do nas</p>
+            <ul class="list">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </li>
-              <li class="social-list__item social-list__item--reverse">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-twitter "></use>
                 </svg>
               </li>
-              <li class="social-list__item social-list__item--reverse">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li class="social-list__item social-list__item--reverse">
+              <li class="list__item list__item--reverse">
                 <svg class="icon" width="20px" height="20px">
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <div class="wrapper__footer">
+          <div class="footer__form-wrapper">
             <form class="footer__form">
               <div class="footer__input-wrapper">
                 <label class="footer__label"
