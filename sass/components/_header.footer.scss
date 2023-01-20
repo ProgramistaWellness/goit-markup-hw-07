@@ -50,12 +50,14 @@
     padding: 72px 0px;
     margin-right: 70px;
   }
-  &__adress {
+  &__contact {
     flex-direction: column;
     gap: 9px;
     margin-top: 20px;
-    font-style: inherit;
     @extend %flex;
+  }
+  &__address {
+    font-style: normal;
   }
   &__form-wrapper {
     padding: 72px 0px 100px 0px;
