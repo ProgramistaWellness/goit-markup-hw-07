@@ -6,7 +6,7 @@ body {
   font-family: "raleway", sans-serif;
 }
 
-.list__item, .link, .overly__text, .grind, .filter__btn, .backdrop__checkbox-wrapper, .backdrop__input {
+.list__item, .link, .overly__text, .grind, .filter__btn, .backdrop__checkbox-icon, .backdrop__checkbox-wrapper, .backdrop__input, .backdrop__icon, .clients-list__item {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -41,7 +41,7 @@ body {
   text-align: left;
 }
 
-.link__header--active::after, .overly__text, .backdrop__close--sign, .backdrop__close, .backdrop__checkbox-icon, .backdrop__checkbox, .backdrop__icon, .about__name, .submit__icon, .is-active::after {
+.link__header--active::after, .overly__text, .backdrop__sign, .backdrop__close, .backdrop__checkbox-icon, .backdrop__checkbox, .backdrop__icon, .about__name, .submit__icon {
   position: absolute;
 }
 
@@ -59,21 +59,6 @@ body {
 }
 .header__contact-info {
   gap: 50px;
-}
-
-.is-active {
-  position: relative;
-}
-.is-active::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translateY(31px);
-          transform: translateY(31px);
 }
 
 .footer {
@@ -166,7 +151,7 @@ body {
   margin-right: 94px;
   text-decoration: none;
 }
-.logo--accent {
+.logo__accent {
   color: #2196f3;
 }
 .logo__footer {
@@ -285,6 +270,7 @@ body {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  cursor: pointer;
 }
 .clients-list__item:hover, .clients-list__item:focus {
   color: #2196f3;
@@ -456,7 +442,7 @@ body {
   height: 30px;
   cursor: pointer;
 }
-.backdrop__close--sign {
+.backdrop__sign {
   top: 50%;
   left: 50%;
   font-size: 30px;

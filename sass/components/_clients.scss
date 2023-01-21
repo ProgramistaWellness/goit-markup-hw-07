@@ -6,7 +6,9 @@
     @include border(currentColor, 4px);
     width: 170px;
     height: 92px;
+    cursor: pointer;
     @extend .clients-list__wrapper;
+    @extend %transition;
     &:hover,
     &:focus {
       color: getColor("brand");
